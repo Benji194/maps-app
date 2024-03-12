@@ -69,7 +69,7 @@ export class PlacesService {
 
         this.isLoadingPlaces =false ;
         this.places = res.features ;
-        this.mapService.createMarkesFromPlaces( this.places ) ;
+        this.mapService.createMarkesFromPlaces( this.places , this.userLocation! ) ;
 
       }
     );
